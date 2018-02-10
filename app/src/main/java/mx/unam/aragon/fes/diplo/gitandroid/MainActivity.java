@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-private Button miBoton;
+private Button miBoton,miSegBoton;
 private TextView miVista;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +15,7 @@ private TextView miVista;
         setContentView(R.layout.activity_main);
 
         miBoton=findViewById(R.id.button);
+        miSegBoton=findViewById(R.id.button2);
         miVista = findViewById(R.id.textView);
 
         miBoton.setOnClickListener(new View.OnClickListener() {
@@ -23,5 +24,13 @@ private TextView miVista;
                 miVista.setText("Hola GitHub");
             }
         });
+        miSegBoton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                miVista.setText("Diplomado Android");
+            }
+        });
+
+
     }
 }
