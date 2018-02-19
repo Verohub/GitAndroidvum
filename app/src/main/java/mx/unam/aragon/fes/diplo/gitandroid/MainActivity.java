@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 private Button miBoton,miSegBoton;
@@ -22,6 +23,7 @@ private TextView miVista;
             @Override
             public void onClick(View v) {
                 miVista.setText("Hola GitHub");
+                Toast.makeText(MainActivity.this,"Se cambio el mensaje del textView", Toast.LENGTH_SHORT).show();
             }
         });
         miSegBoton.setOnClickListener(new View.OnClickListener() {
