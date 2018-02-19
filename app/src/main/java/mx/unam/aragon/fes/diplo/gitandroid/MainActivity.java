@@ -53,7 +53,7 @@ private TextView miVista;
                     new Descargarimag().execute(new URL(url));
                 }
                 catch (Exception e){
-                    android.util.Log.e("diplo tag","error al descargar imagen");
+                    android.util.Log.e("diplo tag","error al descargar imageneee");
 
                 }
             }
