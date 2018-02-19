@@ -41,7 +41,7 @@ private TextView miVista;
         miSegBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                miVista.setText("Diplomado Android");
+                miVista.setText("Diplomado Androidddd");
             }
         });
 
